@@ -14,37 +14,11 @@ This project simulates a smart traffic light using Arduino with:
 - Resistors
 - Push button
 - Buzzer
-
-
 ## Code
-int red = 8;
-int yellow = 9;
-int green = 10;
-int button = 2;
-int buzzer = 6;
 
-// Timing
-unsigned long previousMillis = 0;
-int state = 0;
-bool pedestrianRequest = false;
+The Arduino implementation can be found here:
 
-void setup() {
-  pinMode(red, OUTPUT);
-  pinMode(yellow, OUTPUT);
-  pinMode(green, OUTPUT);
-
-  pinMode(button, INPUT_PULLUP);
-  pinMode(buzzer, OUTPUT);
-}
-
-void loop() {
-  unsigned long currentMillis = millis();
-
-  // Check button press
-  if (digitalRead(button) == LOW) {
-    pedestrianRequest = true;
-  }
-
+[Traffic Light Code](code/traffic_light_system.ino)
 
 ##Features
 - Normal traffic cycle
