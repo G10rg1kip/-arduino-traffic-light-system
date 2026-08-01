@@ -1,35 +1,31 @@
-# -arduino-traffic-light-system
-    “Arduino-based smart traffic light system with pedestrian mode and buzzer alert”
-    # Arduino Traffic Light System
+# Arduino Traffic Light Controller
 
-##Overview
-This project simulates a smart traffic light using Arduino with:
-- Automatic timing
-- Pedestrian button
-- Buzzer alert
+## Overview
 
-##Components
-- Arduino Uno
-- LEDs (Red, Yellow, Green)
+Traffic light controller implemented using an Arduino Uno.
+
+## Features
+
+- Vehicle traffic lights
+- Pedestrian crossing
+- Push button input
+- Buzzer
+- Non-blocking timing
+
+## Hardware
+
+- Arduino Uno R3
+- LEDs
 - Resistors
 - Push button
 - Buzzer
-## Code
 
-The Arduino implementation can be found here:
+## Software
 
-[Traffic Light Code](code/traffic_light_system.ino)
+Written in C/C++ using the Arduino framework.
 
-##Features
-- Normal traffic cycle
-- Pedestrian override (button)
-- Audio signal using buzzer
-- Non-blocking timing (advanced)
+## Future Improvements
 
-##Future Improvements
-- Add sensors (car detection)
-- IoT integration
-- LCD display
-
-##Author
-Giorgi
+- Interrupt-based button handling
+- PCB design
+- STM32 implementation
